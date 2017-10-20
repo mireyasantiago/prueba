@@ -1,0 +1,26 @@
+body{
+    background-color: bisque;
+    color: darkblue;
+}
+#contenedorFormulario{
+    margin-top: 20%; 
+}
+#botonIngreso{
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    width: 120px;
+
+}
+#contenedorUsuario-mostrar{
+    display: none;
+}
+img{
+    width: 40%;
+    
+}
+section{
+    width: 400px;
+    height: 400px;
+    margin-top: 50px;
+}

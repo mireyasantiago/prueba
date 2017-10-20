@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>SOS Vial</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet"/>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/4.5.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/4.5.1/firebase-auth.js"></script>
+    <script defer src="/__/firebase/4.5.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/4.5.1/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/4.5.1/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+           <div  class="col s3 ">
+               <img class="circle responsive-img" src="" alt="">
+               <h3></h3>
+           </div>
+           <div class="col s6 ">
+               <h5></h5>
+           </div>
+           <div class="col s3 ">
+               <a href="#" id="cerrar">Cerrar session</a>
+           </div>
+        </div>
+        
+      </div>
+
+
+	<!-- area para los datos de los usuarios-->
+		<div class="container">
+			<div class="row">
+				
+				<div class="input-field col s10 offset-s1">
+			  	<input id="nombre" type="text" placeholder="Nombre" class="validate" minlength="6" maxlength="25"  required pattern="/^[A-Za-z+][\s[A-Za-z]+]*$/">
+					<label for="first_name"></label>
+				</div>
+				<div class="input-field col s10 offset-s1">
+			 		<input id="apellido" type="text" placeholder="Apellido" class="validate" minlength="6" maxlength="25" required pattern="/^[A-Za-z+][\s[A-Za-z]+]*$/">
+			  	<label for="last_name"></label>
+				</div>
+				<div class="input-field col s10 offset-s1">
+			  	<input id="celular" type="number" placeholder="Celular" class="validate" minlength="5" maxlength="12" required pattern="/^[8]{1}[1-9]{2}[0-9]{5}$/">
+			  	<label for="celphone"></label>
+				</div>
+				<div class="input-field col s10 offset-s1">
+			  	<input id="placas" type="text" class="validate" placeholder="Placas" minlength="2" maxlength="7" required pattern="^([A-Z]{3}-\d{3,4})$">
+			  	<label for="placas"></label>
+				</div>
+				<div class="col s4 col offset-s3">
+				    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Ingresa datos</a>
+                    <!-- Modal Structure -->
+                    <div id="modal1" class="modal">s
+                        <div class="modal-content">
+                            <h4>Tu grua esta en camino</h4>
+                            <small>Gracias por utilizar nuestro servicio</small>
+                        </div>
+                        <div class="modal-footer">
+                            <a id="botonHistorial" href="#" class="modal-action modal-close waves-effect waves-green btn-flat">cerrar</a>
+                        </div>
+                    </div>
+
+				</div>
+			</div>
+			
+			
+
+		</div>
+   
+        <div class="container">
+            <div class="row">
+                <div class="col s5 offset-s3">
+                    <a class="waves-effect waves-light btn" href="historial.html">Historial</a>
+                </div>
+
+            </div>
+        </div>
+    
+   
+
+	
+   
+   
+
+   
+   
+  
+
+         
+
+	
+	
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCirtGDP1vAyTKEc1-DJVSon49cP9z98kI&libraries=places" ></script>
+    <script src="https://www.gstatic.com/firebasejs/4.5.2/firebase.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/mapa.js"></script>
+    <script src="../js/autenticacionGoogle.js"></script>
+    <script src="../js/alert.js"></script>
+    <script src="../js/historial.js"></script>
+    
+    
+
+</body>
+</html>
+		

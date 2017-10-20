@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>SOS Vial</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet"/>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/4.5.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/4.5.1/firebase-auth.js"></script>
+    <script defer src="/__/firebase/4.5.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/4.5.1/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/4.5.1/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+</head>
+<body>
+	<div class="container">
+        <div class="row">
+           <div  class="col s3 ">
+               <img class="circle responsive-img" src="" alt="">
+               <h3></h3>
+           </div>
+           <div class="col s6 ">
+               <h5></h5>
+           </div>
+           <div class="col s3 ">
+               <a href="#" id="cerrar">Cerrar session</a>
+           </div>
+        </div>
+        
+      </div>
+    
+    <!-- area para el input del autocompletado-->
+    <div class="container">
+       <div class="row">
+          <div class="input-field col s10 col offset-1 locationField">
+          
+		      
+		      <input id="pac-input" class="controls validate" type="text" placeholder="Ingresa tu ubicación">
+		      <label for="ubicacion"></label>
+		    </div>
+           
+       </div>
+      
+       
+       <!-- contenedor del mapa-->
+       <div class="row">
+		<div class="col s10 offset-s1">
+			<div id="map" style=" height: 400px;margin-top: 50px;">
+
+			</div>
+			<div class="row">
+				<div class="col s8 offset-s2">
+					<a class="waves-effect waves-light btn botonSolicitud" href="../views/formulario2.html">Enviar Solicitud</a>
+				</div>
+			</div>
+		</div>
+	</div>
+        
+    </div>
+    
+     <div class="container">
+            <div class="row">
+                <div class="col s5 offset-s3">
+                    <a class="waves-effect waves-light btn" href="historial.html">Historial</a>
+                </div>
+
+            </div>
+        </div>
+    
+    
+     
+    
+    
+   
+
+	
+   
+   
+
+   
+   
+  
+
+         
+
+	
+	
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCirtGDP1vAyTKEc1-DJVSon49cP9z98kI&libraries=places" ></script>
+    <script src="https://www.gstatic.com/firebasejs/4.5.2/firebase.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/mapa.js"></script>
+    <script src="../js/autenticacionGoogle.js"></script>
+    
+    
+
+</body>
+</html>
